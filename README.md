@@ -32,3 +32,17 @@ This repository contains the backend code for the CRM (Customer Relationship Man
 1. Clone the repository:
    ```bash
    git clone https://github.com/AmitPrajapati-1/CRM-backend.git
+   
+2. Navigate to the project directory:
+   ```bash
+   cd CRM-backend
+3. Install dependencies:
+      ```bash
+      npm install
+4. Setup environment variables:
+   Create a .env file in the root directory and add the required variables (e.g., MongoDB URI, Redis config, OAuth credentials).
+5. Running the Project:
+      ```bash
+      npm start
+The server will start on the configured port
+   
