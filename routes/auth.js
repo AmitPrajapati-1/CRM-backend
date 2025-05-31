@@ -34,7 +34,7 @@ router.get('/google/callback', passport.authenticate('google', {
   failureRedirect: 'https://AmitPrajapati-1.github.io/CRM-frontend/login',
 }), (req, res) => {
   const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET);
-  res.redirect(`https://AmitPrajapati-1.github.io/CRM-frontend/oauth-success?token=${token}`);
+  res.redirect(`https://AmitPrajapati-1.github.io/CRM-frontend/#/oauth-success?token=${token}`);
 });
 
 module.exports = router;
