@@ -31,10 +31,10 @@ router.get('/google', passport.authenticate('google', { scope: ['profile', 'emai
 
 router.get('/google/callback', passport.authenticate('google', {
   session: false,
-  failureRedirect: 'https://AmitPrajapati-1.github.io/CRM-frontend/login',
+  failureRedirect: 'http://localhost:3000/login',
 }), (req, res) => {
   const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET);
-  res.redirect(`https://AmitPrajapati-1.github.io/CRM-frontend/#/oauth-success?token=${token}`);
+  res.redirect(`http://localhost:3000/oauth-success?token=${token}`);
 });
 
 module.exports = router;
