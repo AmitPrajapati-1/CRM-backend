@@ -7,8 +7,8 @@
   },
   "servers": [
     {
-      "url": "http://localhost:4000",
-      "description": "Local server"
+      "url": "https://crm-backend-production-a717.up.railway.app",
+      "description": "Production server"
     }
   ],
   "paths": {
